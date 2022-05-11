@@ -1,0 +1,18 @@
+create table "user" (
+	id serial primary key,
+	name varchar(100),
+	email varchar(100),
+	password integer,
+	created_date date default current_date
+);
+
+create table "house" (
+	id serial primary key,
+	title varchar(100),
+	desc_short varchar(100),
+	desc_full text,
+	city varchar(100),
+	price numeric,
+	img text,
+	inclusion_date date default current_date
+);
